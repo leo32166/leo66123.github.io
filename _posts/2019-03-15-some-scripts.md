@@ -8,6 +8,23 @@ lnmp:
 
     wget http://soft.vpser.net/lnmp/lnmp1.5.tar.gz -cO lnmp1.5.tar.gz && tar zxf lnmp1.5.tar.gz && cd lnmp1.5 && ./install.sh lnmp
 
+erlang&elixir:
+    wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
+    sudo apt-get update
+    sudo apt remove erlang-base-hipe erlang-crypto erlang-syntax-tools
+    sudo apt-get install esl-erlang
+    sudo apt-get install elixir
+
+
+    sudo yum -y install epel-release
+    sudo yum  -y  update
+    wget http://packages.erlang-solutions.com/erlang-solutions-1.0-1.noarch.rpm
+    sudo rpm -Uvh erlang-solutions-1.0-1.noarch.rpm
+    sudo yum  -y install erlang
+    cd /usr/local && wget https://github.com/elixir-lang/elixir/releases/download/v1.10.2/Precompiled.zip
+    unzip Precompiled.zip
+    
+
 katoolin：
 
     git clone https://github.com/LionSec/katoolin.git
