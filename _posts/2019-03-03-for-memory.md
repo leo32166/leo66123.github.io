@@ -140,6 +140,20 @@ XSS 字段:
     tasklist 找 svchost termservice 找到pid
     然后netstat 查看pid 对应监听端口
 
+开启3389：
+    设置远程桌面端口
+    reg add "HKLM\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /t REG_DWORD /v portnumber /d 3389 /f
+    #开启远程桌面
+
+    net start TermService
+
+    wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 1
+    #检查端口状态
+    netstat -an|find "3389"
+    #关闭远程桌面
+    wmic RDTOGGLE WHERE ServerName='%COMPUTERNAME%' call SetAllowTSConnections 0
+    
+    
 弱口令:
 
     qwerasdf
