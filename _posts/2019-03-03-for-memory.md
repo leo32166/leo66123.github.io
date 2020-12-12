@@ -2,6 +2,9 @@
 title: 常用复制粘贴
 ---
 
+springboot 测试
+https://github.com/LandGrey/SpringBootVulExploit
+
 
 经常公布socks代理：[http://livesocksupdate.blogspot.com/](http://livesocksupdate.blogspot.com/)
 
